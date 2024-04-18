@@ -13,3 +13,5 @@ Real-Time Updates: Stay informed with real-time updates on crop production stati
 Data Visualization: Visualize data through charts, graphs, and maps, facilitating clear understanding and analysis of agricultural trends.
 
 Data Integrity: Rest assured knowing that our platform prioritizes data integrity and accuracy, sourcing information from reputable sources and utilizing rigorous validation processes.
+
+# App link :- https://crop-appuction-statistics-informtion-system-app-bpxlbyqvgcqs6i.streamlit.app
