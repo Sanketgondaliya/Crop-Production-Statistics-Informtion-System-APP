@@ -1,0 +1,15 @@
+CREATE TABLE CropData (
+    State VARCHAR(255),
+    District VARCHAR(255),
+    Crop VARCHAR(255),
+    Year VARCHAR(10),
+    Season VARCHAR(50),
+    Area FLOAT,
+    Area_Units VARCHAR(50),
+    Production FLOAT,
+    Production_Units VARCHAR(50),
+    Yield FLOAT
+);
+
+
+ \copy CropData from 'D:\sem 1\python project\India Agriculture Crop Production.csv' delimiter ',' csv header;
