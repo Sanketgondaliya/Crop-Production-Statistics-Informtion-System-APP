@@ -2,7 +2,7 @@
 import psycopg2
 import pandas as pd
 import streamlit as st
-import base64
+# import base64
 st.set_page_config(page_title="Crop Production Data Download", page_icon="📩", layout="wide")
 st.markdown(
     f"""
