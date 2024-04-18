@@ -139,25 +139,15 @@ def dwon_data(state, year, selected_districts, selected_seasons, selected_crops)
 df = dwon_data(selected_state, selected_year, selected_districts, selected_seasons, selected_crops)
 
 
-def convert_df_to_downloadable(df, filename, format):
-    if format == 'CSV':
-        # Convert DataFrame to CSV string
-        csv = df.to_csv(index=False)
-        # Encode CSV string to base64
-        b64 = base64.b64encode(csv.encode()).decode()
-        # Create href link with base64 encoded CSV
-        href = f'<a href="data:text/csv;base64,{b64}" download="{filename}.csv">Download CSV</a>'
-    elif format == 'Excel':
-        # Create a BytesIO object to hold Excel data
-        excel_buffer = pd.ExcelWriter(pd.compat.StringIO(), engine='xlsxwriter')
-        # Write DataFrame to Excel buffer
-        df.to_excel(excel_buffer, index=False)
-        excel_buffer.seek(0)
-        # Encode Excel buffer to base64
-        b64 = base64.b64encode(excel_buffer.read()).decode()
-        # Create href link with base64 encoded Excel
-        href = f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="{filename}.xlsx">Download Excel</a>'
-    return href
+# def convert_df_to_downloadable(df, filename, format):
+#     if format == 'CSV':
+#         # Convert DataFrame to CSV string
+#         csv = df.to_csv(index=False)
+#         # Encode CSV string to base64
+#         b64 = base64.b64encode(csv.encode()).decode()
+#         # Create href link with base64 encoded CSV
+#         href = f'<a href="data:text/csv;base64,{b64}" download="{filename}.csv">Download CSV</a>'
+#     return href
 
 
 # Streamlit app
